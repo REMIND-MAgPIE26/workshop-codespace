@@ -1,18 +1,31 @@
 #!/bin/bash
 
-git clone https://github.com/pik-piam/mrtutorial.git /workspaces/mrtutorial
-mkdir /workspaces/madrat-main-folder
-
+#
+# Install GAMS license
+#
 if [ -n "$GAMS_LICENSE" ]; then
   mkdir -p /opt/var/gams
   echo "$GAMS_LICENSE" > /opt/var/gams/gamslice.txt
 fi
+
+#
+# Clone and setup folders
+#
+git clone https://github.com/pik-piam/mrtutorial.git /workspaces/mrtutorial
+git clone https://github.com/magpiemodel/magpie.git
+
 
 cd /workspaces/magpie
 Rscript -e '2 + 2; "dummy evaluation to trigger renv install"'
 
 cd /workspaces/mrtutorial
 Rscript -e 'pak::pak(".")'
+
+#
+# Setup madrat folder
+#
+mkdir /workspaces/madrat-main-folder
+
 echo "" >> ~/.bashrc
 echo "export MADRAT_MAINFOLDER='/workspaces/madrat-main-folder'" >> ~/.bashrc
 echo "" >> ~/.bashrc
