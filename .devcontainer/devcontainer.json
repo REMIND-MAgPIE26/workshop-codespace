@@ -6,8 +6,8 @@
 	"image": "ghcr.io/magpiemodel/magpie-image:latest",
 
 	"hostRequirements": {
-		"cpus": 2,
-		"memory": "8gb",
+		"cpus": 4,
+		"memory": "15gb",
 		"storage": "32gb"
 	},
 
@@ -22,7 +22,7 @@
 		}
 	},
 
-  	"postCreateCommand": "bash magpie/.devcontainer/setup.sh",
+  	"postCreateCommand": "bash workshop-codespace/.devcontainer/setup.sh",
 	"workspaceFolder" : "/workspaces",
 
 	"features": {
