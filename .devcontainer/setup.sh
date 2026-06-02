@@ -5,7 +5,7 @@
 #
 if [ -n "$GAMS_LICENSE" ]; then
   mkdir -p /opt/var/gams
-  echo "$GAMS_LICENSE" > /opt/var/gams/gamslice.txt
+  echo "$GAMS_LICENSE" > /opt/gams/gamslice.txt
 fi
 
 #
@@ -13,6 +13,9 @@ fi
 #
 git clone https://github.com/pik-piam/mrtutorial.git /workspaces/mrtutorial
 git clone https://github.com/magpiemodel/magpie.git
+cd magpie
+wget https://raw.githubusercontent.com/magpiemodel/magpie/refs/heads/develop/.codeCheck
+cd ..
 
 
 cd /workspaces/magpie
