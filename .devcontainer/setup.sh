@@ -14,6 +14,7 @@ fi
 git clone https://github.com/pik-piam/mrtutorial.git /workspaces/mrtutorial
 git clone https://github.com/magpiemodel/magpie.git
 cd magpie
+rm .codeCheck
 wget https://raw.githubusercontent.com/magpiemodel/magpie/refs/heads/develop/.codeCheck
 cd ..
 
