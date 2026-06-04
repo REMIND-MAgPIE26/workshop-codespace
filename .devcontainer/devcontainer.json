@@ -18,7 +18,7 @@
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": {},
-			"extensions": ["reditorsupport.r", "GingerTurtle.html-preview-pro"],
+			"extensions": ["reditorsupport.r", "ms-vscode.live-server"],
 		}
 	},
 
