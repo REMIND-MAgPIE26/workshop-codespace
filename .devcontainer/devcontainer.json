@@ -22,7 +22,8 @@
 		}
 	},
 
-  	"postCreateCommand": "bash workshop-codespace/.devcontainer/setup.sh",
+	"onCreateCommand": "bash workshop-codespace/.devcontainer/create.sh",
+  "postCreateCommand": "bash workshop-codespace/.devcontainer/setup.sh",
 	"workspaceFolder" : "/workspaces",
 
 	"features": {
