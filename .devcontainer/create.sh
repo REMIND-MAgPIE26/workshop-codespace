@@ -9,7 +9,11 @@ cd magpie
 rm .codeCheck
 wget https://raw.githubusercontent.com/magpiemodel/magpie/refs/heads/develop/.codeCheck
 git add .codeCheck
+git config user.email "patrickr+codespacesetup@pik-potsdam.de"
+git config user.name "Workshop Codespace Setup"
 git commit -m "Adds exception for codeCheck"
+git config --unset user.email
+git config --unset user.name
 cd ..
 
 cd /workspaces/magpie
