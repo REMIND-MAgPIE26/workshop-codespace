@@ -16,9 +16,30 @@ git config --unset user.email
 git config --unset user.name
 cd ..
 
+#
+# Setup MAgPIE
+#
 cd /workspaces/magpie
 Rscript -e '2 + 2; "dummy evaluation to trigger renv install"'
+# Next step is important to enable validation pdf generatoin
+# as the generation of warnings was only fixed in knitr >= 1.51.5
+Rscript - e 'renv::install("knitr@1.51.7", repos = c(
+  yihui = "https://yihui.r-universe.dev",
+  CRAN = "https://cloud.r-project.org"
+))'
 
+mkdir output
+cd output
+wget --user='nr8AcZ2jBsGE6LX' --password='wfeasdv23a'   "https://cloud.pik-potsdam.de/public.php/webdav/" -O Default.zip
+unzip Default.zip && rm Default.zip
+
+wget --user='y5t9PaFowjWqQzS' --password='wfeasdv23a'   "https://cloud.pik-potsdam.de/public.php/webdav/" -O PHD.zip
+unzip PHD.zip && rm PHD.zip
+
+
+#
+# Setup mrtutorial
+#
 cd /workspaces/mrtutorial
 Rscript -e 'pak::pak(".")'
 
