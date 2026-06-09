@@ -23,7 +23,7 @@ cd /workspaces/magpie
 Rscript -e '2 + 2; "dummy evaluation to trigger renv install"'
 # Next step is important to enable validation pdf generatoin
 # as the generation of warnings was only fixed in knitr >= 1.51.5
-Rscript - e 'renv::install("knitr@1.51.7", repos = c(
+Rscript -e 'renv::install("knitr@1.51.7", repos = c(
   yihui = "https://yihui.r-universe.dev",
   CRAN = "https://cloud.r-project.org"
 ))'
