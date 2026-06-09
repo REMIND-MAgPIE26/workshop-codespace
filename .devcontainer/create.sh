@@ -4,8 +4,8 @@
 # Clone and setup folders
 #
 git clone https://github.com/pik-piam/mrtutorial.git /workspaces/mrtutorial
-git clone https://github.com/magpiemodel/magpie.git
-cd magpie
+git clone https://github.com/magpiemodel/magpie.git /workspaces/magpie
+cd /workspaces/magpie
 rm .codeCheck
 wget https://raw.githubusercontent.com/magpiemodel/magpie/refs/heads/develop/.codeCheck
 git add .codeCheck
@@ -14,7 +14,7 @@ git config user.name "Workshop Codespace Setup"
 git commit -m "Adds exception for codeCheck"
 git config --unset user.email
 git config --unset user.name
-cd ..
+cd /workspaces
 
 #
 # Setup MAgPIE
