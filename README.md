@@ -15,7 +15,9 @@ A GitHub Codespace configuration for MAgPIE/madrat workshops.
 
 ## Optional: GAMS license
 
-Set the `GAMS_LICENSE` Codespace secret to a valid license string.
+Set the `GAMS_LICENSE` [Codespace secret](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-your-account-specific-secrets-for-github-codespaces#adding-a-secret) to a valid license string.
+
+<img width="463" alt="image" src="https://github.com/user-attachments/assets/e5c80c42-e93f-4125-843d-9c860c0d99cb" />
 
 ## Usage
 
