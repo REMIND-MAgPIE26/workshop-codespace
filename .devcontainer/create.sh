@@ -4,6 +4,7 @@
 # Clone and setup folders
 #
 git clone https://github.com/pik-piam/mrtutorial.git /workspaces/mrtutorial
+git clone --depth=1 https://github.com/pik-piam/magpie4.git /workspaces/package-magpie4
 git clone https://github.com/magpiemodel/magpie.git /workspaces/magpie
 cd /workspaces/magpie
 rm .codeCheck
