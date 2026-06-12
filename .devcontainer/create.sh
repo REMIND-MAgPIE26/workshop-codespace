@@ -1,6 +1,15 @@
 #!/bin/bash
 
 #
+# Setup vscode-R
+# This is fragile as it assumes the path of the init.R to be stable
+#
+echo "" >> ~/.Rprofile
+echo "source('~/.vscode-R/init.R')" >> ~/.Rprofile
+echo "" >> ~/.Rprofile
+
+
+#
 # Clone and setup folders
 #
 git clone https://github.com/pik-piam/mrtutorial.git /workspaces/mrtutorial
