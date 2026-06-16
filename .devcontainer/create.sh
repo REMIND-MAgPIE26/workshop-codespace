@@ -40,10 +40,10 @@ Rscript -e 'renv::install("knitr@1.51.7", repos = c(
 
 mkdir output
 cd output
-wget --user='nr8AcZ2jBsGE6LX' --password='wfeasdv23a'   "https://cloud.pik-potsdam.de/public.php/webdav/" -O Default.zip
+wget --user='GAmASMfnwyEGTF6' --password='wfeasdv23a'   "https://cloud.pik-potsdam.de/public.php/webdav/" -O Default.zip
 unzip Default.zip && rm Default.zip
 
-wget --user='y5t9PaFowjWqQzS' --password='wfeasdv23a'   "https://cloud.pik-potsdam.de/public.php/webdav/" -O PHD.zip
+wget --user='znYELszGD7HxdL4' --password='wfeasdv23a'   "https://cloud.pik-potsdam.de/public.php/webdav/" -O PHD.zip
 unzip PHD.zip && rm PHD.zip
 
 
