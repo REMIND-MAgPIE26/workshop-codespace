@@ -5,7 +5,7 @@
 # This is fragile as it assumes the path of the init.R to be stable
 #
 echo "" >> ~/.Rprofile
-echo "source('~/.vscode-R/init.R')" >> ~/.Rprofile
+echo "if (file.exists('~/.vscode-R/init.R')) source('~/.vscode-R/init.R')" >> ~/.Rprofile
 echo "" >> ~/.Rprofile
 
 
